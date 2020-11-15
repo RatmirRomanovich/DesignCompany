@@ -1,0 +1,101 @@
+.section {}
+
+.page-section {
+	width: 100%;
+	min-height: 740px;
+	background: url("../../img/jpg/bgBridge.jpg") center / cover no-repeat;
+	overflow: visible;
+}
+
+.page-section__container {}
+
+.page-section__column {
+	position: relative;
+	top: 150px;
+	min-height: 740px;
+	@extend %flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.page-section__caption {
+	width: 100%;
+	max-width: 734px;
+	min-height: 228px;
+}
+
+.page-section__title {
+	font-size: 64px;
+	line-height: 1.48;
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	// font-size: calc(22px + 30 * (100vw / 1920));
+}
+
+.page-section__text {
+	font-weight: normal;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 170px;
+}
+
+.page-section__info {
+	width: 100%;
+	max-width: 1110px;
+}
+
+.page-section__advertisement {
+	@extend %flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 1110px;
+	min-height: 300px;
+	background: #F7F7F7;
+	padding: 20px;
+}
+
+.page-section__desc {
+	@extend %flex;
+	flex-direction: column;
+	// justify-content: space-between;
+	width: 100%;
+	max-width: 190px;
+	min-height: 186px;
+	padding-right: 30px;
+	&:last-child {
+		padding-right: 0px;
+	}
+}
+
+.span {}
+
+.page-section__span {}
+
+.page-section__span-number {
+	color: $colorOrange;
+	font-size: 72px;
+	line-height: 1.48;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.page-section__span-age {
+	font-size: 36px;
+	line-height: 1.46;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.page-section__span-locftion {
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: center;
+	color: #999999;
+}

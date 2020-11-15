@@ -1,0 +1,58 @@
+.section {}
+
+.reclame-section {
+	background: $colorOrange;
+}
+
+.reclame-section__container {}
+
+.reclame-section__row {
+	height: 100%;
+	min-height: 181px;
+	@extend %flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.reclame-section__info {
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.reclame-section__title {
+	font-size: 48px;
+	line-height: 1.47;
+	letter-spacing: 0.02em;
+	margin-bottom: 7px;
+}
+
+.reclame-section__text {
+	font-size: 24px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+
+.reclame-section__contact {
+	background: #FFFFFF;
+}
+
+.reclame-section__button {
+	padding: 14px 29px;
+}
+
+.span {}
+
+.reclame-section__span-icon {
+	padding-right: 10px;
+}
+
+.reclame-section__link {}
+
+.link {}
+
+.link__button {
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+	color: #000000;
+}

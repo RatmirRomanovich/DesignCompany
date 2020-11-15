@@ -4,7 +4,7 @@
 
 //<ШРИФТЫ>===============================================================================================
 //@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700");
-@import url("https://fonts.googleapis.com/css?family=Oswald:regular,500&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Oswald:regular,500,700&display=swap&subset=cyrillic-ext");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,regular&display=swap&subset=cyrillic-ext");
 //<ШРИФТЫ>===============================================================================================
 
@@ -19,12 +19,15 @@ $md1: $maxwidthcontainer+20;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
+$colorOrange: #F7654A;
 
 %flex {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
+
+
 //</ПЕРЕМЕННЫЕ>===========================================================================================
 
 //<ОБНУЛЕНИЕ>============================================================================
@@ -51,16 +54,17 @@ body {
 	max-width: 1920px;
 	min-height: 100vh;
 }
+
 .main {
 	flex: 1 1 auto;
 }
+
 ._inner {
 	width: 100%;
 	max-width: $md1 + px;
 	margin: 0 auto;
 	padding: 0px 10px;
 	height: 100%;
-	min-height: 60px;
 }
 
 .img {
@@ -71,6 +75,7 @@ body {
 	height: 100%;
 	object-fit: contain;
 }
+
 .img-card {
 	position: absolute;
 	top: 0px;
@@ -80,9 +85,16 @@ body {
 	object-fit: cover;
 }
 
+a {
+	color: #fff;
+}
+
 //<Оболочка, основная сетка, общие параметры>==============================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>=========================================================
 @import "_header.scss";
+@import "_firstPage.scss";
+@import "_projectSection.scss";
+@import "_reclameSection.scss";
 @import "_footer.scss";
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>=========================================================
