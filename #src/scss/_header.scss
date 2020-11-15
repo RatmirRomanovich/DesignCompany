@@ -1,0 +1,36 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: green;
+}
+
+.header__container {
+	@extend %flex;
+	justify-content: space-between;
+	padding-top: 30px;
+	background: yellow;
+}
+
+
+.header__icon {
+	width: 60px;
+	height: 60px;
+}
+
+.icon-menu {}
+
+.menu__body {
+	display: none;
+}
+
+.menu__list {}
+
+.menu__link {}
+
+.link {}
+
+.js-scroll {}
+
+.menu__adress {}
