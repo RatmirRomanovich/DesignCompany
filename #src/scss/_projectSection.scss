@@ -2,11 +2,19 @@
 
 .project-section {}
 
-.project-section__container {}
+.project-section__container {
+	@extend %wrapp;
+}
 
 
 .project-section__body {
 	margin: 250px 0px 150px 0px;
+	@media (max-width: 840px) {
+		margin: 250px 0px 50px 0px;
+	}
+	@media (max-width: 460px) {
+		margin: 180px 0px 50px 0px;
+	}
 }
 
 .project-section__title {}
@@ -14,7 +22,7 @@
 .title {}
 
 .subject {
-	font-size: 36px;
+	@include adaptiv-font(36, 30);
 	line-height: 1.47;
 	text-transform: uppercase;
 	color: #000000;
@@ -28,17 +36,27 @@
 
 .project-section__content {
 	@extend %flex;
+	justify-content: center;
+	@media (max-width: 840px) {
+		flex-direction: column;
+	}
 }
 
 .project-section__items {
-	min-width: 300px;
 	width: 100%;
-	width: 350px;
+	max-width: 350px;
 	min-height: 578px;
 	margin-right: 30px;
 	margin-bottom: 45px;
 	&:last-child {
 		margin-right: 0px;
+	}
+	@media (max-width: 840px) {
+		margin-right: 0px;
+	}
+	@media (max-width: 400px) {
+		max-width: 300px;
+		min-height: 523px;
 	}
 }
 
@@ -46,11 +64,14 @@
 
 .project-section__image {
 	position: relative;
-	min-width: 300px;
 	width: 100%;
 	max-width: 350px;
 	height: 380px;
 	margin-bottom: 45px;
+	@media (max-width: 400px) {
+		max-width: 300px;
+		height: 325px;
+	}
 }
 
 .project-section__subtitle {
