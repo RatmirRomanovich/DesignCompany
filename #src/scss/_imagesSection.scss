@@ -1,0 +1,36 @@
+.images-section {}
+
+.images-section__container {
+	width: 100%;
+	width: 1920px;
+
+	@media (max-width: 500px) {
+		max-width: 299px;
+		margin: 0 auto;
+	}
+}
+
+.images-section__row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.images-section__item {
+	position: relative;
+	width: 100%;
+	max-width: 480px;
+	height: 407px;
+
+	@media (max-width: 500px) {
+		max-width: 299px;
+		height: 214px;
+		
+	}
+}
+
+.images-section__item--active {
+	@media (max-width: 500px) {
+		display: none;
+	}
+}

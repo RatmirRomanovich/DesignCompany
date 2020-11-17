@@ -1,0 +1,49 @@
+.section {}
+
+.partners-secton {
+	background: #404149;
+	padding: 100px 0px 70px 0px;
+	@media (max-width: 967px) {
+		padding: 50px 0px 20px 0px;
+	}
+}
+
+.partners-secton__container {
+	@extend %wrapp;
+}
+
+.partners-secton__subject {
+	text-align: center;
+	color: #fff;
+	padding-bottom: 50px;
+	@media (max-width: 444px) {
+		padding-bottom: 25px;
+	}
+}
+
+.subject {}
+
+.partners-secton__row {
+	@extend %flex;
+	justify-content: center;
+	margin: 0px -32px;
+	@media (max-width: 444px) {
+		margin: 0px -10px;
+	}
+}
+
+.partners-secton__link {
+	position: relative;
+	width: 170px;
+	height: 61px;
+	margin: 0px 32px;
+	margin-bottom: 30px;
+	@media (max-width: 444px) {
+		padding: 0px 0px;
+		margin: 0px 10px 10px 10px;
+		width: 130px;
+		height: 48px;
+	}
+}
+
+.partners-section__logo {}

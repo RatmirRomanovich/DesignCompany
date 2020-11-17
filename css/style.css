@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:regular,500,700&display=swap&subset=cyrillic-ext");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,regular&display=swap&subset=cyrillic-ext");
-.reclame-section__row, .project-section__content, .page-section__desc, .page-section__advertisement, .page-section__column, .menu__list, .header__container {
+.reclame-section__row, .partners-secton__row, .career-section__row, .project-section__content, .page-section__desc, .page-section__advertisement, .page-section__column, .menu__list, .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,7 +11,7 @@
           align-items: center;
 }
 
-.reclame-section__container, .project-section__container, .page-section__container, .header__container {
+.reclame-section__container, .partners-secton__container, .career-section__container, .project-section__container, .page-section__container, .header__container {
   width: 100%;
   max-width: 1130px;
   margin: 0 auto;
@@ -553,6 +553,162 @@ a {
   line-height: 1.37;
   color: #999999;
   text-align: left;
+}
+
+.career-section {
+  padding: 150px 0px;
+  margin: 0px 10px;
+}
+@media (max-width: 967px) {
+  .career-section {
+    padding: 50px 0px;
+  }
+}
+
+.career-section__subject {
+  text-align: center;
+  padding-bottom: 66px;
+}
+
+.career-section__row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0px -15px;
+}
+
+.career-section__box {
+  width: 350px;
+  min-height: 250px;
+  background: #F7F7F7;
+  margin-bottom: 30px;
+  padding: 0px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 400px) {
+  .career-section__box {
+    width: 300px;
+    min-height: 215px;
+  }
+}
+
+.career-section__icon {
+  width: 60px;
+  height: 60px;
+  background: url("../../img/png/careericon.png") center/contain no-repeat;
+  margin-bottom: 20px;
+}
+
+.career-section__desc {
+  width: 100%;
+  max-width: 172px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.images-section__container {
+  width: 100%;
+  width: 1920px;
+}
+@media (max-width: 500px) {
+  .images-section__container {
+    max-width: 299px;
+    margin: 0 auto;
+  }
+}
+
+.images-section__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.images-section__item {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  height: 407px;
+}
+@media (max-width: 500px) {
+  .images-section__item {
+    max-width: 299px;
+    height: 214px;
+  }
+}
+
+@media (max-width: 500px) {
+  .images-section__item--active {
+    display: none;
+  }
+}
+
+.partners-secton {
+  background: #404149;
+  padding: 100px 0px 70px 0px;
+}
+@media (max-width: 967px) {
+  .partners-secton {
+    padding: 50px 0px 20px 0px;
+  }
+}
+
+.partners-secton__subject {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 50px;
+}
+@media (max-width: 444px) {
+  .partners-secton__subject {
+    padding-bottom: 25px;
+  }
+}
+
+.partners-secton__row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px -32px;
+}
+@media (max-width: 444px) {
+  .partners-secton__row {
+    margin: 0px -10px;
+  }
+}
+
+.partners-secton__link {
+  position: relative;
+  width: 170px;
+  height: 61px;
+  margin: 0px 32px;
+  margin-bottom: 30px;
+}
+@media (max-width: 444px) {
+  .partners-secton__link {
+    padding: 0px 0px;
+    margin: 0px 10px 10px 10px;
+    width: 130px;
+    height: 48px;
+  }
 }
 
 .reclame-section {
