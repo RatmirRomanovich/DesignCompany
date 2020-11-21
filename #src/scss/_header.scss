@@ -4,13 +4,19 @@
 	left: 0;
 	width: 100%;
 	z-index: 5;
+	padding-top: 30px;
+	background: rgba(0, 0, 0, 0);
+	transition: all .8s ease 0s ;
+}
+
+.header_active {
+	background: rgba(0, 0, 0, 0.2);
 }
 
 .header__container {
 	@extend %wrapp;
 	@extend %flex;
 	justify-content: space-between;
-	padding-top: 30px;
 }
 
 

@@ -1,0 +1,85 @@
+.section {}
+
+.reviews-section {}
+
+.reviews-section__container {
+	@extend %wrapp;
+}
+
+.reviews-section__body {
+	margin: 150px 0px 120px 0px;
+
+	@media (max-width: 967px) {
+		margin: 50px 0px 20px 0px;
+	}
+}
+
+.reviews-section__subject {
+	text-align: center;
+	margin-bottom: 64px;
+
+	@media (max-width: 967px) {
+		margin-bottom: 32px;
+	}
+}
+
+.reviews-section__row {
+	@extend %flex;
+	justify-content: space-between;
+	margin: 0px -15px;
+	@media (max-width: 1320px) {
+		justify-content: center;
+	}
+	@media (max-width: 400px) {
+		margin: 0px 0px;
+	}
+}
+
+.reviews-section__description {
+	width: 100%;
+	min-width: 300px;
+	max-width: 350px;
+	min-height: 142px;
+	padding: 0px 15px;
+	margin-bottom: 30px;
+	@media (max-width: 400px) {
+		padding: 0px 0px;
+	}
+}
+
+.reviews-section__desc {
+	position: relative;
+	background: #F7F7F7;
+	padding: 79px 30px 38px 30px;
+	margin-bottom: 30px;
+}
+
+.reviews-section__text {
+	font-family: $fontfamilyOpen;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: #999999;
+}
+
+.reviews-section__icon {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 34px;
+	height: 28px;
+	background: url('../../img/png/descIcon.png') center / contain no-repeat;
+}
+
+.reviews-section__representative {
+	@include adaptiv-font(21, 18);
+	line-height: 31px;
+	letter-spacing: 0.02em;
+	color: #000000;
+}
+
+.span {}
+
+.representative-span {
+	color: #F7654A;
+}

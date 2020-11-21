@@ -21,6 +21,9 @@
 	@extend %flex;
 	justify-content: space-around;
 	margin: 0px -15px;
+	@media (max-width: 400px) {
+		margin: 0px 0px;
+	}
 }
 
 .career-section__box {
@@ -36,6 +39,7 @@
 	@media (max-width: 400px) {
 		width: 300px;
 		min-height: 215px;
+		padding: 0px 0px;
 	}
 }
 
